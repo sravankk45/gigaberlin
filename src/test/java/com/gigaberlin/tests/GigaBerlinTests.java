@@ -42,7 +42,7 @@ public class GigaBerlinTests extends TestBase{
 	}
 	
 	@Test
-	public void loginPageTitleTest(Method method) throws Exception{
+	public void gigaBerlinLocationTest(Method method) throws Exception{
 		
 		Thread.sleep(10000);
 	    String testName=method.getName();
