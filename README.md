@@ -27,3 +27,9 @@
 	* googleSearchString
 	* wikiSearchString
 	* googleMapsUrl
+
+
+#### Screenshots are taken for each step and placed in folder in gigaberlin\screenshots ( A new folder gets created for each Test we create further based on @Test method name)
+
+
+#### The Tests  can be executed in from testng.xml as 'TestNG Suite' (right click on testng.xml -> run as -> TestNG Suite)

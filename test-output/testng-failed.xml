@@ -6,7 +6,7 @@
       <class name="com.gigaberlin.tests.GigaBerlinTests">
         <methods>
           <include name="tearDown"/>
-          <include name="loginPageTitleTest"/>
+          <include name="gigaBerlinLocationTest" invocation-numbers="0"/>
           <include name="setUp"/>
           <include name="beforeSuite"/>
         </methods>

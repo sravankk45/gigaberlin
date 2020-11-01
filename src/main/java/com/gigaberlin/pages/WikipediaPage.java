@@ -13,10 +13,10 @@ public class WikipediaPage{
 		//Page Factory
 	
 		@FindBy(id="searchInput")
-		WebElement serachTextBox;
+		private WebElement serachTextBox;
 		
 		@FindBy(xpath="//i[contains(text(),'Search')]")
-		WebElement wikiSearchButton;
+		private WebElement wikiSearchButton;
 		
 		
 		//Initializing the Page Objects:

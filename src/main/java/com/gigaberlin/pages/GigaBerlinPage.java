@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class GigaBerlinPage {
 	
 	@FindBy(xpath="//*[@class='geo-dec']")
-	WebElement coordinates;
+	private WebElement coordinates;
 	
 	//Initializing the Page Objects:
 			public GigaBerlinPage(WebDriver driver){
