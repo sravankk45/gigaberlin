@@ -10,7 +10,7 @@
 * gets the coordinates
 * Opens a new tab and opens google maps home page
 * Enters the coordinates in search box and click search button
-* Created CSV files with location details
+* Creates CSV files with location details
 * Close the browsers
 
 
