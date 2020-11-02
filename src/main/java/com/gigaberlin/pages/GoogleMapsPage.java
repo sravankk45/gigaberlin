@@ -22,8 +22,8 @@ public class GoogleMapsPage {
 			@FindBy(xpath="//span[contains(text(),'15537 Grünheide')]")
 			private WebElement addressElement;
 			
-			
-			
+			@FindBy(xpath="//span[contains(text(),'CR22+22 Grünheide (Mark)')]")
+			private WebElement plusCodeElement;
 			
 			private JavascriptExecutor jse;
 			private  WebDriverWait wait;
@@ -50,6 +50,11 @@ public class GoogleMapsPage {
 				String address=addressElement.getText();
 				return address;
 			}
+			public String getPlusCode() {
+				String plusCode=plusCodeElement.getText();
+				return plusCode;
+			}
+			
 			
 
 }

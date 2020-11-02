@@ -11,7 +11,9 @@ import com.gigaberlin.pages.GigaBerlinPage;
 import com.gigaberlin.pages.GoogleMapsPage;
 import com.gigaberlin.pages.GooglePage;
 import com.gigaberlin.pages.WikipediaPage;
+import com.gigaberlin.utilities.CSVUtil;
 import com.gigaberlin.utilities.Utilities;
+
 
 public class GigaBerlinTests extends TestBase{
 	
@@ -19,6 +21,7 @@ public class GigaBerlinTests extends TestBase{
 	private WikipediaPage wikipediaPage;
 	private GigaBerlinPage gigaBerlinPage;
 	private Utilities utilities;
+	private CSVUtil csvUtil;
 	private GoogleMapsPage googleMapsPage;
 
 
@@ -29,6 +32,7 @@ public class GigaBerlinTests extends TestBase{
 	@BeforeSuite
 	public void beforeSuite() {
 		utilities=new Utilities();
+		csvUtil=new CSVUtil();
 		utilities.deleteScreesnhotFolder();
 	}
 	@BeforeTest
@@ -74,8 +78,13 @@ public class GigaBerlinTests extends TestBase{
 		utilities.takeScreenshots(driver, testName);
 	    
 	    String address=googleMapsPage.getAddress();
+	   
+	    
 	    boolean addressCheckFlag=address.contains("15537");
 	    Assert.assertTrue(addressCheckFlag, "Address Verfied Successfully");
+	    
+	    String plusCode=googleMapsPage.getPlusCode();
+	    csvUtil.createLocationData(baseDir,address, plusCode);
 	  
 	}
 	

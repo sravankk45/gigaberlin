@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="GigaFactory Suite" duration-ms="24916" started-at="2020-11-01T22:40:56 CET" finished-at="2020-11-01T22:41:21 CET">
+  <suite name="GigaFactory Suite" duration-ms="30184" started-at="2020-11-02T01:19:45 CET" finished-at="2020-11-02T01:20:15 CET">
     <groups>
     </groups>
-    <test name="GigaFactory Tests" duration-ms="24916" started-at="2020-11-01T22:40:56 CET" finished-at="2020-11-01T22:41:21 CET">
+    <test name="GigaFactory Tests" duration-ms="30184" started-at="2020-11-02T01:19:45 CET" finished-at="2020-11-02T01:20:15 CET">
       <class name="com.gigaberlin.tests.GigaBerlinTests">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.gigaberlin.tests.GigaBerlinTests@202b0582]" name="beforeSuite" is-config="true" duration-ms="57" started-at="2020-11-01T22:40:56 CET" finished-at="2020-11-01T22:40:56 CET">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.gigaberlin.tests.GigaBerlinTests@2034b64c]" name="beforeSuite" is-config="true" duration-ms="48" started-at="2020-11-02T01:19:45 CET" finished-at="2020-11-02T01:19:45 CET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.gigaberlin.tests.GigaBerlinTests@202b0582]" name="setUp" is-config="true" duration-ms="2599" started-at="2020-11-01T22:40:56 CET" finished-at="2020-11-01T22:40:58 CET">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.gigaberlin.tests.GigaBerlinTests@2034b64c]" name="setUp" is-config="true" duration-ms="2457" started-at="2020-11-02T01:19:45 CET" finished-at="2020-11-02T01:19:48 CET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="gigaBerlinLocationTest(java.lang.reflect.Method)[pri:0, instance:com.gigaberlin.tests.GigaBerlinTests@202b0582]" name="gigaBerlinLocationTest" duration-ms="20858" started-at="2020-11-01T22:40:58 CET" finished-at="2020-11-01T22:41:19 CET">
+        <test-method status="PASS" signature="gigaBerlinLocationTest(java.lang.reflect.Method)[pri:0, instance:com.gigaberlin.tests.GigaBerlinTests@2034b64c]" name="gigaBerlinLocationTest" duration-ms="26015" started-at="2020-11-02T01:19:48 CET" finished-at="2020-11-02T01:20:14 CET">
           <params>
             <param index="0">
               <value>
@@ -26,7 +26,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- gigaBerlinLocationTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.gigaberlin.tests.GigaBerlinTests@202b0582]" name="tearDown" is-config="true" duration-ms="1396" started-at="2020-11-01T22:41:19 CET" finished-at="2020-11-01T22:41:21 CET">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.gigaberlin.tests.GigaBerlinTests@2034b64c]" name="tearDown" is-config="true" duration-ms="1591" started-at="2020-11-02T01:20:14 CET" finished-at="2020-11-02T01:20:15 CET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

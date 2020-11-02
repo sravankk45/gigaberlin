@@ -1,6 +1,7 @@
 package com.gigaberlin.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -25,11 +26,13 @@ public class GooglePage {
 		private WebElement clickAgreeButton;
 		
 		private  WebDriverWait wait;
+		private JavascriptExecutor jse;
 		
 		
 		//Initializing the Page Objects:
 		public GooglePage(WebDriver driver){
 			PageFactory.initElements(driver, this);
+			jse = (JavascriptExecutor)driver;
 			wait = new WebDriverWait(driver,30);
 		}
 		
@@ -39,9 +42,7 @@ public class GooglePage {
 			 
 		}
 		public void clickSearchButton() {
-			googleSearchButton.click();
-			
-			
+			jse.executeScript("arguments[0].click()", googleSearchButton);
 		}
 		public void clickWikiLink() {
 			clickWikiLink.click();
